@@ -1,0 +1,11 @@
+---
+- hosts: discord
+  become: yes
+  tasks:
+    - name: Send a message to the Discord channel
+      community.general.discord:
+        webhook_id: "00"
+        webhook_token: "xy"
+        content: "este mensaje fue enviado desde ansible"
+
+#https://discord.com/api/webhooks/{webhook.id}/{webhook.token}
