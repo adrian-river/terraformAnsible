@@ -3,7 +3,6 @@ resource "digitalocean_droplet" "www-1" {
   name = "wordpress"
   region = "nyc3"
   size = "s-1vcpu-1gb"
-  id = "161.35.134.2"
   ssh_keys = [data.digitalocean_ssh_key.ssherror.id]
   
   connection {
